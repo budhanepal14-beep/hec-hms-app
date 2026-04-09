@@ -7,50 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="app">
-        <header>
-            <h1>HEC-HMS Customizer Pro</h1>
-            <nav>
-                <ul>
-                    <li><a href="#dashboard">Dashboard</a></li>
-                    <li><a href="#basin-model">Basin Model Editor</a></li>
-                    <li><a href="#meteorology">Meteorology</a></li>
-                    <li><a href="#simulation">Simulation</a></li>
-                    <li><a href="#results">Results Visualization</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="dashboard">
-                <h2>Dashboard</h2>
-                <p>Welcome to the HEC-HMS Customizer Pro Dashboard!</p>
-                <!-- Dashboard Components -->
-            </section>
-            <section id="basin-model">
-                <h2>Basin Model Editor</h2>
-                <p>Edit your basin model here.</p>
-                <!-- Basin Model Editor Components -->
-            </section>
-            <section id="meteorology">
-                <h2>Meteorology</h2>
-                <p>Set your meteorological data.</p>
-                <!-- Meteorological Data Components -->
-            </section>
-            <section id="simulation">
-                <h2>Simulation</h2>
-                <p>Run your simulations!</p>
-                <!-- Simulation Components -->
-            </section>
-            <section id="results">
-                <h2>Results Visualization</h2>
-                <p>Visualize the results here.</p>
-                <!-- Results Visualization Components -->
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2026 HEC-HMS Customizer Pro. All rights reserved.</p>
-        </footer>
-    </div>
-    <script src="app.js"></script>
+    <header>
+        <h1>HEC-HMS Customizer Pro</h1>
+    </header>
+    <main>
+        <section id="customization">
+            <h2>Customize Your HEC-HMS Application</h2>
+            <!-- Customization form elements go here -->
+            <form>
+                <label for="project-name">Project Name:</label>
+                <input type="text" id="project-name" name="project-name" required>
+                <br>
+                <label for="settings">Settings:</label>
+                <textarea id="settings" name="settings" required></textarea>
+                <br>
+                <button type="submit">Save Settings</button>
+            </form>
+        </section>
+        <section id="status">
+            <h2>Application Status</h2>
+            <p id="status-message">Application is running smoothly!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 HEC-HMS Customizer Pro</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
